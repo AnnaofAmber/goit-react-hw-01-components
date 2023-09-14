@@ -2,16 +2,17 @@
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgba(224, 216, 216, 0.166);
     
 }
 
 .description{
-padding-bottom: 8px;
+    padding-top: 25px;
+padding-bottom: 32px;
 display: flex;
 flex-direction: column;
 align-items: center;
 gap: 18px;
-margin-bottom: 25px;
 border-bottom: 2px solid grey;
 }
 .image{
@@ -32,13 +33,14 @@ border-bottom: 2px solid grey;
 }
 
 .stats{
-padding: 0;
+    padding-left: 0;
 margin: 0;
 list-style: none;
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 30px;
+background-color: rgba(204, 224, 245, 0.417);
+/* gap: 30px; */
 
 }
 
@@ -47,6 +49,13 @@ gap: 30px;
     flex-direction: column;
     gap: 8px;
     align-items: center;
+    width: 80px;
+
+    padding: 15px;
+}
+
+.item:not(:last-child){
+    border-right: 1px solid grey;
 }
 
 .label{
