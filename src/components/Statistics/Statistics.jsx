@@ -1,16 +1,19 @@
+
+import css from './Statistics.module.css'
+
 export const Statistics = props=> {
     const {title, stats} =props;
 
     return(
-        <section>
-  <h2>{title}</h2>
+        <section className={css.section}>
+  <h2 className={css.title}>{title}</h2>
 
-  <ul >
+  <ul className={css.list}>
     {stats.map(stat=>(
       
-            <li key={stat.id}>
-                <span>{stat.label}</span>
-                <span>{stat.percentage}</span>
+            <li className={css.item} key={stat.id}>
+                <span className={css.label}>{stat.label}</span>
+                <span className={css.percentage}>{stat.percentage}%</span>
             </li>
         
     ))}
