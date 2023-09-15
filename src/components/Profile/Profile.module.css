@@ -55,7 +55,7 @@ background-color: rgba(204, 224, 245, 0.417);
 }
 
 .item:not(:last-child){
-    border-right: 1px solid grey;
+    border-right: 2px solid grey;
 }
 
 .label{
